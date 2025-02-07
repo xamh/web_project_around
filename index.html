@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Around the USA"/>
+    <meta name="keywords" content="Nature, photography, html, js, css"/>
+    <meta name="author" content="Xavier Márquez"/>
+    <title>Around the United States of America</title>
+    <link rel="stylesheet" href="./page/index.css"/>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+</head>
+<body>
+    <div class="page" >
+        <header class="header">
+          <img src="./images/logo.png" alt="Imagen del logo" class="header__image"/>
+        </header>
+        <main class="main">
+          <section class="main__profile">
+            <div class="main__content-image">
+              <img src="./images/Avatar.png" alt="Imagen del avatar" class="main__profile-image"/>
+            </div>
+            <div class="main__content-paragraph">
+              <h1 id="profile__info-name" class="main__paragraph main__paragraph_name">Jacques Cousteau</h1>
+              <h2 class="main__paragraph main__paragraph_job">Explorador</h2>
+              <button type="button" class="main__button main__button_edit">&#128394;</button>
+            </div>
+            <button type="button" class="main__button main__button_add">&#10133;</button>
+          </section>
+          <div class="main__gallery">
+            <div class="main__gallery-card">
+              <img src="./images/yosemite_valley.jpg" alt="Yosemite Valley" class="main__gallery-img">
+              <div class="main__gallery-content">
+                <p class="main__gallery-paragraph">Valle de Yosemite</p>
+                <button type="button" class="main__button main__button_like"></button>
+              </div>
+            </div>
+            <div class="main__gallery-card">
+              <img src="./images/lousie_lake.png" alt="Lousie Lake" class="main__gallery-img">
+              <div class="main__gallery-content">
+                <p class="main__gallery-paragraph">Lago Louise</p>
+                <button type="button" class="main__button main__button_like"></button>
+              </div>
+            </div>
+            <div class="main__gallery-card">
+              <img src="./images/bald_mountains.png" alt="Bald Mountains" class="main__gallery-img">
+              <div class="main__gallery-content">
+                <p class="main__gallery-paragraph">Montañas Calvas</p>
+                <button type="button" class="main__button main__button_like"></button>
+              </div>
+            </div>
+            <div class="main__gallery-card">
+              <img src="./images/vanois_np.png" alt="Vanois National Park" class="main__gallery-img">
+              <div class="main__gallery-content">
+                <p class="main__gallery-paragraph">Vanois Parque Nacional</p>
+                <button type="button" class="main__button main__button_like"></button>
+              </div>
+            </div>
+            <div class="main__gallery-card">
+              <img src="./images/latemar.png" alt="Latemar" class="main__gallery-img">
+              <div class="main__gallery-content">
+                <p class="main__gallery-paragraph">Latemar</p>
+                <button type="button" class="main__button main__button_like"></button>
+              </div>
+            </div>
+            <div class="main__gallery-card">
+              <img src="./images/braise_lake.png" alt="Lake di Braise" class="main__gallery-img">
+              <div class="main__gallery-content">
+                <p class="main__gallery-paragraph">Lago di Braise</p>
+                <button type="button" class="main__button main__button_like"></button>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="popup" id="editModal">
+          <div class="popup__container">
+            <button type="button" class="popup__button" id="closeButton">&#10006;</button>
+            <form class="popup__form">
+              <h2 class="popup__subtitle">Editar Perfil</h2>
+              <fieldset class="popup__content">
+                <label class="popup__field">
+                  <input id="nameInput" class="popup__input popup__input_name" type="text" placeholder="Nombre"/>
+                </label>
+                <label class="popup__field">
+                  <input class="popup__input popup__input_about" type="text" id="functionInput" placeholder="Acerca de mi" />
+                </label>
+                <button id="saveButton" type="button" class="popup__button popup__button_save" >Guardar</button>
+              </fieldset>
+            </form>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <p class="footer__copyright">&COPY; 2025 Around The U.S.</p>
+        </footer>
+    </div>
+<script src="./scripts/index.js"></script>    
+</body>
+</html>
