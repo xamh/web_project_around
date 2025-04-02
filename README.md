@@ -1,5 +1,5 @@
 # Tripleten web_project_around
-## _Proyecto 7:_ Around the US
+## _Proyecto 7 y 8:_ Around the US
 
 Este proyecto es sobre la creacion de una red social para compartir momentos inolvidables.
 
@@ -16,20 +16,18 @@ Este proyecto es sobre la creacion de una red social para compartir momentos ino
 - Grid layout
 - Javascript básico
 
-## Funcionalidad
-
+## Funcionalidad del proyecto 8
 La página es una breve galeria de imagenes que muestra los parques nacionales de estados unidos.
-    -Se muestra el perfil de usuario
-    -Sección de fotos
-    -Edición de perfil
-    -Boton like funcional
+   
+- Botón de like funcional.
+- Funcionalidad del formulario para agregar una nueva imagen, y su respectiva tarjeta.
+- Eliminar una tarjeta
+- Popup para agrandar las imagenes
 
 ## Mejoras
 
-     -Cambiar la foto de perfil.
-     -Funcionalidad del botón de agregar más fotos.
-     -Posibilidad de eliminar fotos.
-     -Añadir mejor funcionalidad con Js.
+    -Cambiar la foto de perfil.
+    -Mejorar funcionalidad con Js.
 
 ### *Enlace a la página github pages*
 https://xamh.github.io/web_project_around/
