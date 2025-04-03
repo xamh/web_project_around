@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function showPopup(event) {
     const img = event.target;
     imagenPopup.src = img.src;
+    imagenPopup.alt = img.alt;
     popupParagraph.textContent = img.getAttribute("data-title");
     popup.style.display = "flex";
     popupParagraph.style.display = "flex";
