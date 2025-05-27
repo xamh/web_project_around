@@ -33,16 +33,18 @@
       <div class="popup" id="editModal">
         <div class="popup__container">
           <button type="button" class="popup__button" id="closeButton">&#10006;</button>
-          <form class="popup__form">
+          <form class="popup__form" name="form" novalidate >
             <h2 class="popup__subtitle">Editar Perfil</h2>
             <fieldset class="popup__content">
               <label class="popup__field">
-              <input id="nameInput" class="popup__input popup__input_name" type="text" placeholder="Nombre"/>
+              <input id="nameInput" class="popup__input popup__input_name" type="text" placeholder="Nombre" minlength="2" maxlength="40" required />
+              <span id="functionInput-error" class="form__input-error"></span>
               </label>
               <label class="popup__field">
-                <input class="popup__input popup__input_about" type="text" id="functionInput" placeholder="Acerca de mi" />
+                <input class="popup__input popup__input_about" type="text" id="functionInput" placeholder="Acerca de mi" minlength="2" maxlength="200" required />
+                <span id="functionInput-error" class="form__input-error"></span>
               </label>
-              <button id="saveButton" type="button" class="popup__button popup__button_save" >Guardar</button>
+              <button id="saveButton" type="button" class="popup__button popup__button_save popup__button_inactive" disabled >Guardar</button>
             </fieldset>
           </form>
         </div>
@@ -51,16 +53,18 @@
       <div class="popup" id="createImg">
         <div class="popup__container">
           <button type="button" class="popup__button" id="closeButtonImg">&#10006;</button>
-          <form class="popup__form">
+          <form class="popup__form" name="formImg" novalidate >
             <h2 class="popup__subtitle">Nuevo Lugar</h2>
             <fieldset class="popup__content">
               <label class="popup__field">
-                <input class="popup__input form__input-img" type="text" id="nameImg" placeholder="Nombre de la Imagen" required />
+                <input class="popup__input form__input-img" type="text" id="nameImg" placeholder="Nombre de la Imagen"  minlength="2" maxlength="30" required />
+                <span id="nameImg-error" class="form__input-error"></span>
               </label>
               <label class="popup__field">
                 <input class="popup__input form__input-img" type="url" id="linkImg" placeholder="Link de la URL" required />
+                <span id="nameImg-error" class="form__input-error"></span>
               </label>
-              <button id="saveButtonImg" class="popup__button popup__button_save" type="button">Crear</button>
+              <button id="saveButtonImg" class="popup__button popup__button_save button_inactive" type="button">Crear</button>
             </fieldset>
           </form>
         </div>
@@ -74,6 +78,7 @@
         <p class="footer__copyright">&COPY; 2025 Around The U.S.</p>
       </footer>
   </div>
-<script src="./scripts/index.js"></script>    
+<script src="./scripts/index.js"></script>
+<script src="./scripts/validate.js" type="module"></script>
 </body>
 </html>

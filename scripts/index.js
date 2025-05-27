@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const editButton = document.querySelector(".main__button_edit");
   const modal = document.getElementById("editModal");
@@ -48,6 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
       src: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/lago.jpg"
     }
   ];
+
+  function closeOnEsc(event) {
+    if (event.key === "Escape") {
+      closePopup();
+      closeEditModal();
+      closeEditModalImg();
+    }
+  }
 
   function openEditModal() {
     nameInput.value = nameElement.textContent;
@@ -196,5 +205,6 @@ document.addEventListener("DOMContentLoaded", () => {
       newImagen.style.display = "none";
     }
   });
-
+  
+  document.addEventListener("keydown", closeOnEsc);
 });
