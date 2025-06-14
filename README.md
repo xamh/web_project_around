@@ -1,5 +1,5 @@
 # Tripleten web_project_around
-## _Proyecto 7, 8 y 9:_ Around the US
+## _Proyecto 7, 8, 9 y 10:_ Around the US
 
 Este proyecto es sobre la creacion de una red social para compartir momentos inolvidables.
 
@@ -16,13 +16,13 @@ Este proyecto es sobre la creacion de una red social para compartir momentos ino
 - Grid layout
 - Javascript básico
 
-## Funcionalidad del proyecto 9
+## Funcionalidad del proyecto 10
 La página es una breve galeria de imagenes que muestra los parques nacionales de estados unidos.
    
-- Validación del formulario de editar perfil.
-- Validación del formulario para agregar un nuevo lugar.
-- Validación del cierre de los popup's haciendo clic en cualquier parte de la ventana.
-- Validación del cirerre de los popup's con la tecla "esc".
+- Añadiendo POO al proyecto
+- Creación de las clases "card" y "formvalidator".
+- Creación del template card.
+
 
 ## Mejoras
 
